@@ -6,9 +6,11 @@ import React, { useRef, useState, useEffect } from "react";
 export const BackgroundBeamsWithCollision = ({
   children,
   className,
+  id,
 }: {
   children: React.ReactNode;
   className?: string;
+  id?: string;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const parentRef = useRef<HTMLDivElement>(null);
@@ -113,6 +115,7 @@ export const BackgroundBeamsWithCollision = ({
   return (
     <div
       ref={parentRef}
+      id={id}
       className={cn(
         "h-96 md:h-[40rem] bg-gradient-to-b from-white to-slate-50 relative flex items-center w-full justify-center overflow-hidden",
         // h-screen if you want bigger

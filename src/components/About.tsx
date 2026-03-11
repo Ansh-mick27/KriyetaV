@@ -1,4 +1,5 @@
 import { Target, Lightbulb, Users } from "lucide-react";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 export function About() {
   const cards = [
@@ -20,11 +21,7 @@ export function About() {
   ];
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden" id="about">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent"></div>
-      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
-
+    <BackgroundBeamsWithCollision className="py-24" id="about">
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
@@ -39,7 +36,7 @@ export function About() {
           {cards.map((card, index) => (
             <div 
               key={index} 
-              className="bg-slate-50 border border-slate-200 p-8 rounded-2xl hover:bg-slate-100 hover:border-slate-300 transition-all duration-300 group"
+              className="bg-white/80 backdrop-blur-sm border border-slate-200 p-8 rounded-2xl hover:bg-white hover:border-slate-300 transition-all duration-300 group"
             >
               <div className="w-16 h-16 bg-white border border-slate-200 shadow-sm flex items-center justify-center rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 {card.icon}
@@ -52,6 +49,6 @@ export function About() {
           ))}
         </div>
       </div>
-    </section>
+    </BackgroundBeamsWithCollision>
   );
 }

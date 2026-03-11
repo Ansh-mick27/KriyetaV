@@ -9,6 +9,7 @@ import {
   Leaf, 
   Sparkles 
 } from "lucide-react";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 export function Tracks() {
   const tracks = [
@@ -69,9 +70,7 @@ export function Tracks() {
   ];
 
   return (
-    <section className="py-24 bg-slate-50 relative" id="tracks">
-      <div className="absolute right-0 bottom-0 w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[150px] pointer-events-none"></div>
-      
+    <BackgroundBeamsWithCollision className="py-24" id="tracks">
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
@@ -86,11 +85,9 @@ export function Tracks() {
           {tracks.map((track, index) => (
             <div 
               key={index} 
-              className={`p-6 rounded-2xl bg-gradient-to-br ${track.color} border bg-white backdrop-blur-sm shadow-sm hover:shadow-md hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group`}
+              className={`p-6 rounded-2xl bg-gradient-to-br ${track.color} border bg-white/80 backdrop-blur-sm shadow-sm hover:shadow-md hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group`}
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:bg-white/10 transition-colors"></div>
-              
-              <div className="w-12 h-12 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center mb-6 shadow-sm">
+              <div className="w-12 h-12 rounded-lg bg-white border border-slate-200 flex items-center justify-center mb-6 shadow-sm">
                 {track.icon}
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">{track.title}</h3>
@@ -101,6 +98,6 @@ export function Tracks() {
           ))}
         </div>
       </div>
-    </section>
+    </BackgroundBeamsWithCollision>
   );
 }

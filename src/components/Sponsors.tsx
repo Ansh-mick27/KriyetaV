@@ -1,7 +1,9 @@
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+
 export function Sponsors() {
   return (
-    <section className="py-24 bg-slate-50 relative" id="sponsors">
-      <div className="max-w-7xl mx-auto px-4">
+    <BackgroundBeamsWithCollision className="py-24" id="sponsors">
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
         
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
@@ -17,7 +19,7 @@ export function Sponsors() {
           <div className="w-full text-center">
             <h3 className="text-sm uppercase tracking-[0.2em] text-slate-500 mb-8 font-semibold">Hosted By</h3>
             <div className="flex justify-center items-center">
-              <div className="bg-white border border-slate-200 px-8 py-6 rounded-2xl shadow-sm hover:shadow-md hover:border-slate-300 transition-all w-full max-w-md text-center">
+              <div className="bg-white/80 backdrop-blur-sm border border-slate-200 px-8 py-6 rounded-2xl shadow-sm hover:shadow-md hover:border-slate-300 transition-all w-full max-w-md text-center">
                 <p className="text-2xl font-bold text-slate-900 tracking-tight">Acropolis Institute of Technology and Research</p>
                 <p className="text-slate-600 mt-2">Indore, M.P.</p>
               </div>
@@ -28,7 +30,7 @@ export function Sponsors() {
             <h3 className="text-sm uppercase tracking-[0.2em] text-slate-500 mb-8 font-semibold">Technical Partners</h3>
             <div className="flex flex-wrap justify-center gap-6">
               {['IEEE Madhya Pradesh Section', 'IEEE Student Branch (SBA04301S)', 'IEEE SIGHT'].map((partner, idx) => (
-                <div key={idx} className="bg-white border border-slate-200 px-8 py-6 rounded-2xl w-full sm:w-auto shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
+                <div key={idx} className="bg-white/80 backdrop-blur-sm border border-slate-200 px-8 py-6 rounded-2xl w-full sm:w-auto shadow-sm hover:-translate-y-1 hover:shadow-md transition-all">
                   <p className="text-lg font-bold text-slate-800">{partner}</p>
                 </div>
               ))}
@@ -39,7 +41,7 @@ export function Sponsors() {
             <h3 className="text-sm uppercase tracking-[0.2em] text-slate-500 mb-8 font-semibold">Supporting Cells</h3>
             <div className="flex flex-wrap justify-center gap-6">
               {['Acropolis Institute of Management (AIM)', 'Entrepreneurship Development Cell (EDC)'].map((cell, idx) => (
-                <div key={idx} className="bg-white border border-slate-200 px-8 py-4 rounded-full shadow-sm hover:border-[#00e5ff]/50 transition-colors">
+                <div key={idx} className="bg-white/80 backdrop-blur-sm border border-slate-200 px-8 py-4 rounded-full shadow-sm hover:border-[#00e5ff]/50 transition-colors">
                   <p className="text-slate-700 font-medium">{cell}</p>
                 </div>
               ))}
@@ -49,6 +51,6 @@ export function Sponsors() {
         </div>
 
       </div>
-    </section>
+    </BackgroundBeamsWithCollision>
   );
 }
