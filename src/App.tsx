@@ -8,7 +8,7 @@ import { Footer } from "./components/Footer"
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50 selection:bg-[#00e5ff]/30">
+    <div className="min-h-screen bg-white text-slate-900 selection:bg-[#00e5ff]/30">
       <Hero />
       <About />
       <Tracks />

@@ -25,15 +25,15 @@ export function Rules() {
   ];
 
   return (
-    <section className="py-24 bg-slate-950" id="rules">
+    <section className="py-24 bg-white" id="rules">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
           <div className="w-full lg:w-1/2">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
               Rules & <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">Eligibility</span>
             </h2>
-            <p className="text-lg text-slate-400 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
               KRIYETA 5.0 is designed to be an inclusive, competitive, and highly rewarding environment. To ensure fairness and adhere to our mission of empowering women in tech, please note the following core guidelines.
             </p>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-pink-500/10 border border-pink-500/30 text-pink-300">
@@ -45,12 +45,12 @@ export function Rules() {
           <div className="w-full lg:w-1/2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {rules.map((rule, idx) => (
-                <div key={idx} className="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-                  <div className="w-12 h-12 bg-slate-950 rounded-lg flex items-center justify-center mb-4 border border-slate-800">
+                <div key={idx} className="bg-slate-50 border border-slate-200 p-6 rounded-2xl">
+                  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
                     {rule.icon}
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2">{rule.title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{rule.desc}</p>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">{rule.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{rule.desc}</p>
                 </div>
               ))}
             </div>

@@ -32,12 +32,12 @@ export function Prizes() {
   ];
 
   return (
-    <section className="py-24 bg-slate-900 relative" id="prizes">
+    <section className="py-24 bg-white relative" id="prizes">
       <div className="absolute top-1/2 left-1/2 w-full max-w-3xl h-[400px] bg-yellow-500/10 rounded-[100%] blur-[100px] -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 
       <div className="max-w-5xl mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
             Prize <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-500">Pool</span>
           </h2>
           <p className="text-xl text-yellow-500/80 font-semibold tracking-widest uppercase">
@@ -49,12 +49,12 @@ export function Prizes() {
           {prizes.map((prize, idx) => (
             <div 
               key={idx}
-              className={`flex-1 flex flex-col items-center justify-end bg-slate-950/80 backdrop-blur-md rounded-3xl border ${prize.border} p-8 object-bottom w-full md:w-1/3 transition-all duration-500 hover:-translate-y-4 ${prize.scale}`}
+              className={`flex-1 flex flex-col items-center justify-end bg-slate-50 min-h-[300px] backdrop-blur-md rounded-3xl border border-slate-200 shadow-md p-8 object-bottom w-full md:w-1/3 transition-all duration-500 hover:-translate-y-4 hover:shadow-lg ${prize.scale}`}
             >
               <div className={`mb-6 p-4 rounded-full bg-gradient-to-br ${prize.color} bg-opacity-10 animate-pulse`}>
                 {prize.icon}
               </div>
-              <h3 className="text-xl text-slate-300 font-medium mb-2">{prize.title}</h3>
+              <h3 className="text-xl text-slate-600 font-medium mb-2">{prize.title}</h3>
               <p className={`text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r ${prize.color}`}>
                 {prize.amount}
               </p>
