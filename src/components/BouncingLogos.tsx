@@ -32,6 +32,8 @@ function BouncingLogo({ logo, isHovered }: { logo: any; isHovered: boolean }) {
         await controls.start({
           x: `${(Math.random() - 0.5) * 60}vw`,
           y: `${(Math.random() - 0.5) * 60}vh`,
+          opacity: 0.3,
+          scale: 1,
           transition: { duration: 3 + Math.random() * 2, ease: "easeInOut" }
         });
         
@@ -51,6 +53,8 @@ function BouncingLogo({ logo, isHovered }: { logo: any; isHovered: boolean }) {
       controls.start({
         x: logo.hoverPos.x,
         y: logo.hoverPos.y,
+        opacity: 1,
+        scale: 1.1,
         transition: { duration: 0.8, type: "spring", bounce: 0.3 }
       });
     } else {
@@ -69,7 +73,7 @@ function BouncingLogo({ logo, isHovered }: { logo: any; isHovered: boolean }) {
     <motion.img
       src={logo.src}
       animate={controls}
-      className={`absolute w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain opacity-50 drop-shadow-lg ${
+      className={`absolute w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] ${
         logo.mixBlend ? "mix-blend-multiply" : ""
       }`}
     />
