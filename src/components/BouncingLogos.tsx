@@ -73,8 +73,8 @@ function BouncingLogo({ logo, isHovered }: { logo: any; isHovered: boolean }) {
     <motion.img
       src={logo.src}
       animate={controls}
-      style={{ imageRendering: "-webkit-optimize-contrast", WebkitFontSmoothing: "antialiased" }}
-      className={`absolute w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] ${
+      style={{ imageRendering: "auto" }}
+      className={`absolute w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] ${
         logo.mixBlend ? "mix-blend-multiply" : ""
       }`}
     />
