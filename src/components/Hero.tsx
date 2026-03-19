@@ -57,7 +57,7 @@ export function Hero() {
 
         <div className="relative z-10 flex flex-col items-center justify-center">
           <h2 className="text-sm font-bold tracking-widest text-[#00e5ff] uppercase mb-4 tracking-[0.2em]">
-            17th - 18th April 2026 • Indore (M.P.)
+            17th - 19th April 2026 • Indore (M.P.)
           </h2>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 font-sans tracking-tighter mb-6 relative">
@@ -71,6 +71,9 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center items-center mb-12">
+            <span className="px-6 py-2 rounded-full bg-gradient-to-r from-yellow-400/20 to-amber-500/20 border border-yellow-500/30 text-amber-700 font-bold backdrop-blur-sm shadow-sm flex items-center gap-2">
+              <span className="text-lg">🏆</span> ₹1,00,000 Prize Pool
+            </span>
             <span className="px-6 py-2 rounded-full bg-slate-900/5 border border-slate-900/10 text-slate-700 font-medium backdrop-blur-sm">
               Discover
             </span>
