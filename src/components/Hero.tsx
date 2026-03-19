@@ -83,10 +83,14 @@ export function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 mb-16">
-            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold rounded-xl shadow-[0_0_40px_rgba(79,70,229,0.4)] hover:shadow-[0_0_60px_rgba(79,70,229,0.6)] transition-all duration-300 transform hover:-translate-y-1">
+            <button 
+              onClick={() => window.open('https://unstop.com/hackathons/kriyeta-50-acropolis-institute-of-technology-research-1662045', '_blank')}
+              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold rounded-xl shadow-[0_0_40px_rgba(79,70,229,0.4)] hover:shadow-[0_0_60px_rgba(79,70,229,0.6)] transition-all duration-300 transform hover:-translate-y-1">
               Register Now
             </button>
-            <button className="px-8 py-4 bg-slate-900/5 hover:bg-slate-900/10 border border-slate-900/10 text-slate-800 font-bold rounded-xl backdrop-blur-sm transition-all duration-300">
+            <button 
+              onClick={() => document.getElementById('tracks')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-8 py-4 bg-slate-900/5 hover:bg-slate-900/10 border border-slate-900/10 text-slate-800 font-bold rounded-xl backdrop-blur-sm transition-all duration-300">
               View Tracks
             </button>
           </div>
