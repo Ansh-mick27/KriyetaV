@@ -5,21 +5,21 @@ export function Prizes() {
   const prizes = [
     {
       title: "Runner Up",
-      amount: "₹30,000",
+      amount: "₹50,000",
       icon: <Medal className="w-12 h-12 text-slate-300" />,
       color: "from-slate-400 to-slate-200",
       scale: "scale-95"
     },
     {
       title: "Winner",
-      amount: "₹50,000",
+      amount: "₹75,000",
       icon: <Trophy className="w-16 h-16 text-yellow-400" />,
       color: "from-yellow-500 to-amber-300",
       scale: "scale-105 z-10"
     },
     {
       title: "Second Runner Up",
-      amount: "₹20,000",
+      amount: "₹25,000",
       icon: <Award className="w-12 h-12 text-amber-700" />,
       color: "from-amber-600 to-amber-500",
       scale: "scale-90"
@@ -34,7 +34,7 @@ export function Prizes() {
             Prize <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-500">Pool</span>
           </h2>
           <p className="text-xl text-yellow-500/80 font-semibold tracking-widest uppercase">
-            ₹1,00,000 Total Prizes!
+            ₹1,50,000 Total Prizes!
           </p>
         </div>
 

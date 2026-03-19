@@ -72,7 +72,7 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-4 justify-center items-center mb-12">
             <span className="px-6 py-2 rounded-full bg-gradient-to-r from-yellow-400/20 to-amber-500/20 border border-yellow-500/30 text-amber-700 font-bold backdrop-blur-sm shadow-sm flex items-center gap-2">
-              <span className="text-lg">🏆</span> ₹1,00,000 Prize Pool
+              <span className="text-lg">🏆</span> ₹1,50,000 Prize Pool
             </span>
             <span className="px-6 py-2 rounded-full bg-slate-900/5 border border-slate-900/10 text-slate-700 font-medium backdrop-blur-sm">
               Discover
